@@ -74,7 +74,7 @@ router.get("/getUser/:email", async (req, res) => {
 
     if (!user) {
         res.status(201).json({
-            message: `Accound with ${email} does not exist`
+            message: `Accound with ${email} does not exist!`
         })
         return
     }
